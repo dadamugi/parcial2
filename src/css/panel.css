@@ -3,3 +3,15 @@
   text-align: center;
   background-color: grey;
 }
+
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1px 1px;
+  grid-template-areas: "a b" "c d";
+}
+.a {
+  grid-area: a;
+}
