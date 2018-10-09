@@ -13,17 +13,17 @@ import imagen4 from '../img/contact.png';
 const Miapp = document.getElementById("app");
 ReactDOM.render(
     <div>
-        <div class='grid-container'>
-            <div class='a'>
+        <div className='grid-container'>
+            <div className='a'>
                 <Panel title={"Programación"} content="Enlaces a sitios de programación" img={imagen1} />
             </div>
-            <div class='b'>
+            <div className='b'>
                 <Panel title="comunidad" content="Mi contenido1" img={imagen2} />
             </div>
-            <div class='c'>
+            <div className='c'>
                 <Panel title="trabajos" content="Mi contenido2" img={imagen3} />
             </div>
-            <div class='d'>
+            <div className='d'>
                 <Panel title="conactos" content="Mi contenido3" img={imagen4} />
             </div>
         </div>

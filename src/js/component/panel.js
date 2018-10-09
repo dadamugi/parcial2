@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../css/panel.css';
-
+import PropTypes from 'prop-types';
 class Panel extends React.Component{
     render(){
         const style={
@@ -19,4 +19,9 @@ class Panel extends React.Component{
         )
     }
 } 
+Panel.propTypes={
+    img:PropTypes.string,
+    title:PropTypes.string,
+    content:PropTypes.string
+}
 export default Panel;
