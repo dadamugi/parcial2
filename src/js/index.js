@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import Panel from './component/panel.js'
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 //Lista de imagenes
 
 import imagen1 from '../img/icono.png';
@@ -13,6 +15,23 @@ import imagen4 from '../img/contact.png';
 const Miapp = document.getElementById("app");
 ReactDOM.render(
     <div>
+
+ <Grid container spacing={24}>
+        <Grid item xs={12}>
+          <Paper>xs=12</Paper>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Paper >xs=12 sm=6</Paper>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Paper>xs=12 sm=6</Paper>
+        </Grid>       
+      </Grid>
+
+
+
+
+
         <div className='grid-container'>
             <div className='a'>
                 <Panel title={"Programación"} content="Enlaces a sitios de programación" img={imagen1} />

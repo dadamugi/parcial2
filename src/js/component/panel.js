@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../css/panel.css';
 import PropTypes from 'prop-types';
+import Button from '@material-ui/core/Button';
 class Panel extends React.Component{
     render(){
         const style={
@@ -15,6 +16,9 @@ class Panel extends React.Component{
             <img src={this.props.img} style={style.img}/>
             <h2>{this.props.title}</h2>
             <p>{this.props.content}</p>
+            <Button variant="contained" color="primary">
+                Hello World
+            </Button>
             </div>
         )
     }
