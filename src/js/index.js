@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Panel from './component/panel.js'
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
+import Header from './component/header.js'
 //Lista de imagenes
 
 import imagen1 from '../img/icono.png';
@@ -18,7 +19,7 @@ ReactDOM.render(
 
  <Grid container spacing={24}>
         <Grid item xs={12}>
-          <Paper>xs=12</Paper>
+          <Paper><Header/></Paper>
         </Grid>
         <Grid item xs={12} sm={6}>
           <Paper >xs=12 sm=6</Paper>
